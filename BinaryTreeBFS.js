@@ -75,7 +75,7 @@ let tree = {
 			right: null,
 		},
 	},
-};
+}
 
-const btbfs = new BinaryTreeBFS();
-btbfs.run(tree, 33);
+const btbfs = new BinaryTreeBFS()
+btbfs.run(tree, 33)

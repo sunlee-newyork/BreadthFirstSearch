@@ -24,7 +24,7 @@ class TreeBFS {
             }
         }
 
-        console.log("permQueue: ", permQueue);
+        console.log("permQueue: ", permQueue)
 
         return found || "Does not exist"
     }
@@ -40,22 +40,24 @@ let tree = {
     children: [
         {
             name: 'B', value: 7,
-            children: [{name: 'F', value: 9, children: []}]
+            children: [{name: 'F', value: 9, children: []}],
         },
         {
             name: 'C', value: 11,
-            children: [{name: 'G', value: 9, children: []}]
+            children: [{name: 'G', value: 9, children: []}],
         },
-        {name: 'D', value: 55, children: []},
+        {
+            name: 'D', value: 55, 
+            children: []},
         {
             name: 'E', value: 65,
             children: [
                 {name: 'H', value: 21, children: []},
-                {name: 'I', value: 33, children: []}
-            ]
-        }
-    ]
-};
+                {name: 'I', value: 33, children: []},
+            ],
+        },
+    ],
+}
 
 const tbfs = new TreeBFS();
 tbfs.run(tree, 33);
